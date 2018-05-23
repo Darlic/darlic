@@ -10,6 +10,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicServicesProvider } from '../providers/ionic-services/ionic-services';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+import { IonicHelperProvider } from '../providers/ionic-helper/ionic-helper';
+import { Network } from '@ionic-native/network';
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +33,9 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     IonicServicesProvider,
-    SQLite
+    SQLite,
+    IonicHelperProvider,
+    Network
   ]
 })
 export class AppModule {}
