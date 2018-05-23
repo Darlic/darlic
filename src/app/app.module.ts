@@ -9,7 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicServicesProvider } from '../providers/ionic-services/ionic-services';
-
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +30,8 @@ import { IonicServicesProvider } from '../providers/ionic-services/ionic-service
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    IonicServicesProvider
+    IonicServicesProvider,
+    SQLite
   ]
 })
 export class AppModule {}
