@@ -1,0 +1,8 @@
+{
+  "name": "darlicApp",
+  "app_id": "da9b31a0",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
