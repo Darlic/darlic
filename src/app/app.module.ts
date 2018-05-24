@@ -11,13 +11,19 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 import { IonicHelperProvider } from '../providers/ionic-helper/ionic-helper';
 import { Network } from '@ionic-native/network';
 import {WelcomePage} from '../pages/welcome/welcome';
+import {SignupPage} from '../pages/signup/signup';
+import {LoginPage} from '../pages/login/login';
+import {DashboardPage} from '../pages/dashboard/dashboard';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    WelcomePage
+    WelcomePage,
+    SignupPage,
+    LoginPage,
+    DashboardPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,10 @@ import {WelcomePage} from '../pages/welcome/welcome';
     MyApp,
     HomePage,
     ListPage,
-    WelcomePage
+    WelcomePage,
+    SignupPage,
+    LoginPage,
+    DashboardPage
   ],
   providers: [
     StatusBar,
