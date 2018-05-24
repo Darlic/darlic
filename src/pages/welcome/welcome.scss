@@ -1,3 +1,40 @@
 page-welcome {
-
+	h1{
+		font-weight:300;
+		color:#263238;
+		text-align:center;
+	}
+	.heading{
+		padding-top:10px;
+	}
+	.logo{
+		padding:10px;
+		text-align: center;
+		margin-top: 150px;
+		box-shadow: 0px 0px 8px 1px #1685c2;
+		border-radius: 10px;
+	}
+	.center-align{
+		text-align:center;
+	}
+	.mt-80{
+		margin-top:80px;
+	}
+	.mt-10{
+		margin-top:10px;
+	}
+	.btn-sign-up{
+		background-color: #1685c2;
+		color:white;
+		padding: 10px 50px;
+		border-radius: 15px;
+		border:1px solid #1685c2;
+	}
+	.btn-sign-in{
+		background-color:white;
+		color:#1685c2;
+		padding: 10px 50px;
+		border-radius: 15px;
+		border:1px solid #1685c2;	
+	}
 }
