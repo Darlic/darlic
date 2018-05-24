@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the WelcomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import {SignupPage} from '../../pages/signup/signup';
 @IonicPage()
 @Component({
   selector: 'page-welcome',
@@ -17,9 +10,12 @@ export class WelcomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
+  }
+  signup(){
+  	console.log("here");
+  	this.navCtrl.setRoot(SignupPage);
   }
 
 }
