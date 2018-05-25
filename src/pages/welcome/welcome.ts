@@ -8,17 +8,16 @@ import {LoginPage} from '../../pages/login/login';
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-   step:any
+  step:any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad WelcomePage');
   }
   signup(){
     this.step ='sign';
     this.navCtrl.setRoot(SignupPage);
   }
-   login(){
+  login(){
     this.step ='loginup';
     this.navCtrl.setRoot(LoginPage);
   }
