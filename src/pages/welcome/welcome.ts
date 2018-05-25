@@ -7,16 +7,15 @@ import {SignupPage} from '../../pages/signup/signup';
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-
+   step:any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
   }
   signup(){
-  	console.log("here");
-  	this.navCtrl.setRoot(SignupPage);
-    
+    this.step ='step1';
+    this.navCtrl.setRoot(SignupPage);
   }
 
 }
