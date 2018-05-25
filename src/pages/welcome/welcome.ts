@@ -16,7 +16,7 @@ export class WelcomePage {
   }
   signup(){
     this.step ='step1';
-    this.navCtrl.setRoot(SignupPage);
+    // this.navCtrl.setRoot(SignupPage);
   }
    login(){
     this.navCtrl.setRoot(LoginPage);

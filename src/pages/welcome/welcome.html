@@ -24,7 +24,7 @@
 			   <h1>Darlic App</h1>
 			</div>
 			<div class="center-align mt-80">
-				<button  [ngClass]="{'signUp':step==='step1'}" class="btn-sign-up " (click)="signup()">Sign Up</button>
+				<button [class.signUp]="step=='step1'"  class="btn-sign-up " (click)="signup()">Sign Up</button>
 			</div>
 			<div class="center-align mt-10">
 				<button class="btn-sign-in"  (click)="login()">Sign In</button>
