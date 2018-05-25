@@ -30,19 +30,34 @@ page-signup {
 		.btn-sign-up{
 			background-color: #1685c2;
 			color:white;
-			padding: 10px 50px;
+			padding: 10px 64px;
 			border-radius: 15px;
 			border:1px solid #1685c2;
 		}
 		span{
 			padding-right:10px;
-			font-size:14px;
+			font-size:12px;
 			font-weight:300;
 			color:#263238;
 		}
 		.text-sign-in{
-			font-size:16px;
+			font-size:14px;
 			font-weight:300;
+		}
+		.form{
+			margin-top: -150px;
+			background-color: white;
+			border-radius: 10px;
+			border:1px solid #e8e8e8;
+		}
+		.btn-facebook{
+			color:white;
+			background-color:#4867AA;
+			padding: 10px 20px;
+			border-radius:15px;
+		}
+		.fb-signup{
+			color:white;
 		}
 
 }
