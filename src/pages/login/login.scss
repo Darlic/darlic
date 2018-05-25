@@ -1,3 +1,61 @@
 page-login {
 
+			.bg-blue{
+								background-color:#1685c2;
+							}
+			.logo{
+			background-color:white;
+			padding:10px;
+			text-align: center;
+			margin-top:50px;
+		   box-shadow: 0px 0px 8px 1px #1685c2;
+		   border-radius: 10px;
+		}
+			.text-sign-up{
+				margin-bottom:150px;
+			}
+			h2{
+				color:white;
+				font-weight:300;
+			}
+			.center-align{
+				text-align:center;
+			}
+			.ph-20{
+				padding:0px 20px 0px 20px;
+			}
+			.pv-20{
+				padding:20px 0px 20px 0px;
+			}
+			.login-form{
+			margin-top: -150px;
+			background-color: white;
+			border-radius: 10px;
+			border:1px solid #e8e8e8;
+		}	
+		.btn-login{
+			background-color: #1685c2;
+			color:white;
+			padding: 10px 64px;
+			border-radius: 15px;
+			border:1px solid #1685c2;
+		}
+		.create{
+			font-size:14px;
+			padding-left:10px;
+		}
+		.create-account{
+			padding-right:10px;
+			font-size:12px;
+			font-weight:300;
+			color:#263238;
+			padding-bottom:20px;
+			text-align:center;
+		}
+		.forget-pwd{
+			font-size:13px;
+			text-align:center;
+			color:#488aff;
+			padding:20px 0px 20px 0px;
+		}
 }
