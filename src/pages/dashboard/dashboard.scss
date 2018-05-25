@@ -1,3 +1,37 @@
 page-dashboard {
 
+		   .bg-grey{
+				background-color:#eceff1;
+
+			}
+			.order-wapper{
+			 padding: 10px;
+		    background-color: white;
+		    border-radius: 5px;
+		    box-shadow: 0px 0px 10px 1px #e8e8e8;
+		    margin-bottom:10px;	
+			}
+			.order-icon{
+				padding:10px;
+			}
+			.order-content{
+				font-weight:200;
+				font-family: 'Open Sans', sans-serif;
+				font-size:13px;
+				line-height:20px;	
+				color:#455a64;
+				margin:0px;
+			}
+				.order-head{
+				 font-family: 'Open Sans', sans-serif;
+				 font-weight:400;
+				 font-size:17px;
+				 color:#37474f;
+				 margin:0px;
+				 padding-top:10px;
+				}
+				.navbar{
+					background-color:#1685c2;
+				}
+
 }
