@@ -16,6 +16,7 @@ export class WelcomePage {
   signup(){
   	console.log("here");
   	this.navCtrl.setRoot(SignupPage);
+    
   }
 
 }
