@@ -15,10 +15,11 @@ export class WelcomePage {
     console.log('ionViewDidLoad WelcomePage');
   }
   signup(){
-    this.step ='step1';
+    this.step ='sign';
     this.navCtrl.setRoot(SignupPage);
   }
    login(){
+    this.step ='loginup';
     this.navCtrl.setRoot(LoginPage);
   }
 
