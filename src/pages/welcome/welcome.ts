@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SignupPage} from '../../pages/signup/signup';
+import {LoginPage} from '../../pages/login/login';
 @IonicPage()
 @Component({
   selector: 'page-welcome',
@@ -16,6 +17,9 @@ export class WelcomePage {
   signup(){
     this.step ='step1';
     this.navCtrl.setRoot(SignupPage);
+  }
+   login(){
+    this.navCtrl.setRoot(LoginPage);
   }
 
 }
