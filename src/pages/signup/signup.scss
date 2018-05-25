@@ -27,5 +27,22 @@ page-signup {
 		.pv-20{
 			padding:20px 0px 20px 0px;
 		}
+		.btn-sign-up{
+			background-color: #1685c2;
+			color:white;
+			padding: 10px 50px;
+			border-radius: 15px;
+			border:1px solid #1685c2;
+		}
+		span{
+			padding-right:10px;
+			font-size:14px;
+			font-weight:300;
+			color:#263238;
+		}
+		.text-sign-in{
+			font-size:16px;
+			font-weight:300;
+		}
 
 }
