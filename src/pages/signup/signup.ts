@@ -11,9 +11,8 @@ export class SignupPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
+   
   }
   login(){
   	this.navCtrl.setRoot(LoginPage);
