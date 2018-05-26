@@ -3,13 +3,15 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <div class="dashboard-heading">
+    	<h4>Darlic</h4>
+    </div>
+    <!-- <ion-title>Home</ion-title> -->
   </ion-navbar>
 </ion-header>
 
 <ion-content>
 			<ion-row>
-				<ion-col col-12>
 					<ion-slides>
 						  <ion-slide>
 						    <img src="assets/imgs/digital-marketing-classes-600x369.jpg">
@@ -27,72 +29,17 @@
 						    <img src="assets/imgs/website-ab-testing-tool-600x369.jpg">
 						  </ion-slide>
 						</ion-slides>
-
+			</ion-row>
+			<ion-row class="wapper">
+				<ion-col col-6>
+					<div class="order-img">
+					  <ion-icon name="cart-outline"></ion-icon>
+					</div>
+				</ion-col>
+				<ion-col col-6>
+					<div >
+						<img src="assets/imgs/about.svg">
+					</div>
 				</ion-col>
 			</ion-row>
-			<!-- <ion-row class="bg-grey" padding>
-					<ion-col col-12>
-						<ion-row class="order-wapper">
-							<ion-col col-4>
-								<div class="order-icon">
-									<img src="../assets/imgs/diagram.png">
-								</div>
-							</ion-col>
-							<ion-col col-8>
-								<div class="">
-									<div class="">
-										<p class="order-head">Order</p>
-										<p class="order-content">Lorem Ipsum is simply dummy text of the is am of </p>
-									</div>
-								</div>
-							</ion-col>
-						</ion-row>
-						<ion-row class="order-wapper">
-							<ion-col col-4>
-								<div class="order-icon">
-									<img src="../assets/imgs/project.png">
-								</div>
-							</ion-col>
-							<ion-col col-8>
-								<div class="">
-									<div class="">
-										<p class="order-head">Project</p>
-										<p class="order-content">Lorem Ipsum is simply dummy text of the is am of </p>
-									</div>
-								</div>
-							</ion-col>
-						</ion-row>
-						<ion-row class="order-wapper">
-							<ion-col col-4>
-								<div class="order-icon">
-									<img src="../assets/imgs/cad.png">
-								</div>
-							</ion-col>
-							<ion-col col-8>
-								<div class="">
-									<div class="">
-										<p class="order-head">Product</p>
-										<p class="order-content">Lorem Ipsum is simply dummy text of the is am of </p>
-									</div>
-								</div>
-							</ion-col>
-						</ion-row>
-						<ion-row class="order-wapper">
-							<ion-col col-4>
-								<div class="order-icon">
-									<img src="../assets/imgs/technical-support.png">
-								</div>
-							</ion-col>
-							<ion-col col-8>
-								<div class="">
-									<div class="">
-										<p class="order-head">Support</p>
-										<p class="order-content">Lorem Ipsum is simply dummy text of the is am of </p>
-									</div>
-								</div>
-							</ion-col>
-						</ion-row>
-					</ion-col>
-			</ion-row> -->
-
 </ion-content>
