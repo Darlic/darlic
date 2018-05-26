@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {DashboardPage} from '../../pages/dashboard/dashboard';
-
+import {SignupPage} from '../../pages/signup/signup';
 
 @IonicPage()
 @Component({
@@ -16,6 +16,9 @@ export class LoginPage {
   }
   login(){
   	this.navCtrl.setRoot(DashboardPage)
+  }
+  signIn(){
+    this.navCtrl.setRoot(SignupPage)
   }
 
 }
