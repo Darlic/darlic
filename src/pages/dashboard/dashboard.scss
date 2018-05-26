@@ -1,14 +1,25 @@
 page-dashboard {
-				.dashboard-heading{
+				h4{
 					font-weight:300;
 					color:#263238;
-					font-family: "Open Sans",sans-serif;
+					margin:0px;
 				}
-				.order-img{
-					padding:10px;
-					font-size:30px;
-					color:white;
+				.order-wrapper{
 					background-color:#ef5350;
+					text-align:center;
+					padding:10px;
+				}
+				.order-icon{
+					font-size:40px;
+					color:white;
+					text-align:center;
+				}
+				.order-head{
+					font-weight:400;
+					font-size:17px;
+					text-align:center;
+					color:white;
+					margin:0px;
 				}
 
 }
