@@ -22,16 +22,18 @@ export class SignupPage {
      
     })
   }
-  login(signup){
+  submit(signup){
     if(!(signup.valid)){
       console.log('not valid');
       this.signup;
     }else{
-
     console.log(signup.value);
   	this.navCtrl.setRoot(LoginPage);
     }
-
+  }
+  
+  login(){
+     this.navCtrl.setRoot(LoginPage); 
   }
 
 }

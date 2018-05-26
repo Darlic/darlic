@@ -21,19 +21,39 @@
 		<ion-row padding>
 			<ion-col col-12>
 				<div class="pv-20 ph-20 login-form">
-					<ion-list padding>
-	               <ion-item>
-	                  <ion-label floating class="label-color">User Id</ion-label>
-	                  <ion-input type="text"></ion-input>
-	               </ion-item>
-	               	<ion-item>
-	                  	<ion-label floating class="label-color">Password</ion-label>
-	                  	<ion-input type="password"></ion-input>
-	               	</ion-item>
-	            	</ion-list>
-	            <div class="center-align">
-	               <button class="btn-login" (click)="login()">Login</button>
-	            </div>
+					<form [formGroup]="loginform">
+						<ion-list padding>
+		               <ion-item>
+		                  <ion-label floating class="label-color">Email</ion-label>
+		                  <ion-input type="email" formControlName="Email"  required
+                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"></ion-input>
+		               </ion-item>
+		               <div *ngIf="loginform.controls.Email.invalid && loginform.controls.Email.touched">
+	              
+	               	<div *ngIf="loginform.controls.Email.errors.required">
+               			<p>Email is required</p>
+	               	</div>
+	               	<div *ngIf="loginform.controls.Email.errors.pattern">
+               			<p>Email is not valid</p>
+	               	</div>
+	               </div>
+
+		               	<ion-item>
+		                  	<ion-label floating class="label-color">Password</ion-label>
+		                  	<ion-input type="password" formControlName="password" ></ion-input>
+		               	</ion-item>
+		            	</ion-list>
+		            	 <div *ngIf="loginform.controls.password.invalid && loginform.controls.password.touched">
+	               	<div *ngIf="loginform.controls.password.errors.required">
+               			<p>Password is required</p>
+	               	</div>
+	               	
+	               </div>
+
+		            <div class="center-align">
+		               <button class="btn-login" (click)="login(loginform)">Login</button>
+		            </div>
+		        </form>
 	            <div class="forget-pwd">
 	            	<span>Forget Password</span>
 	            </div>
