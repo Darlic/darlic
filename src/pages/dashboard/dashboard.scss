@@ -1,13 +1,23 @@
 page-dashboard {
+				.toolbar-ios {
+				    padding: 0px;
+				    padding-left: 0px;
+				    padding-right: 0px;
+				}
+				.dashboard-heading{
+					background-color:#263238;
+					padding:10px;
+				}	
 				h4{
 					font-weight:300;
-					color:#263238;
+					color:#ffffff;
 					margin:0px;
 				}
 				.order-wrapper{
-					background-color:#ef5350;
+					background-color:#e57373;
 					text-align:center;
-					padding:10px;
+					padding:20px 10px 20px 10px;
+					border-radius:4px;
 				}
 				.order-icon{
 					font-size:40px;
@@ -15,7 +25,62 @@ page-dashboard {
 					text-align:center;
 				}
 				.order-head{
-					font-weight:400;
+					font-weight:300;
+					font-size:17px;
+					text-align:center;
+					color:white;
+					margin:0px;
+				}
+				.product-wrapper{
+					background-color:#66bb6a;
+					// background-color:#1AAAC3;
+					text-align:center;
+					padding:20px 10px 20px 10px;
+					border-radius:4px;
+				}
+				.product-icon{
+					font-size:40px;
+					color:white;
+					text-align:center;
+				}
+				.product-head{
+					font-weight:300;
+					font-size:17px;
+					text-align:center;
+					color:white;
+					margin:0px;
+				}
+				.project-wrapper{
+					background-color:#03a9f4;
+					text-align:center;
+					padding:20px 10px 20px 10px;
+					border-radius:4px;
+				}
+				.project-icon{
+					font-size:40px;
+					color:white;
+					text-align:center;	
+				}
+				.project-head{
+					font-weight:300;
+					font-size:17px;
+					text-align:center;
+					color:white;
+					margin:0px;	
+				}
+				.support-wrapper{
+					background-color:#7e57c2;
+					text-align:center;
+					padding:20px 10px 20px 10px;
+					border-radius:4px;	
+				}
+				.support-icon{
+					font-size:40px;
+					color:white;
+					text-align:center;	
+				}
+				.suppot-head{
+					font-weight:300;
 					font-size:17px;
 					text-align:center;
 					color:white;

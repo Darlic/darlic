@@ -31,10 +31,10 @@
 		               <div *ngIf="loginform.controls.Email.invalid && loginform.controls.Email.touched">
 	              
 	               	<div *ngIf="loginform.controls.Email.errors.required">
-               			<p>Email is required</p>
+               			<p class="validation-color">Email is required</p>
 	               	</div>
 	               	<div *ngIf="loginform.controls.Email.errors.pattern">
-               			<p>Email is not valid</p>
+               			<p class="validation-color">Email is not valid</p>
 	               	</div>
 	               </div>
 
@@ -45,7 +45,7 @@
 		            	</ion-list>
 		            	 <div *ngIf="loginform.controls.password.invalid && loginform.controls.password.touched">
 	               	<div *ngIf="loginform.controls.password.errors.required">
-               			<p>Password is required</p>
+               			<p class="validation-color">Password is required</p>
 	               	</div>
 	               	
 	               </div>

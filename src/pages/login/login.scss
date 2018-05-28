@@ -1,8 +1,8 @@
 page-login {
 
 			.bg-blue{
-								background-color:#1685c2;
-							}
+					background-color:#1685c2;
+			}
 			.logo{
 			background-color:white;
 			padding:10px;
@@ -61,5 +61,11 @@ page-login {
 		.label-color{
 			color:#37474f;
 			font-weight:300;
+		}
+		.validation-color{
+			color:#ef5350;
+			font-weight:300;
+			font-size:12px;
+			text-align:center;
 		}
 }
