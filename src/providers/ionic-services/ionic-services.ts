@@ -102,7 +102,7 @@ export class IonicServicesProvider {
 					questionMarks.push("?");
 				}
 				this.query='insert into '+tableName + '(' + Cols + ') VALUES (' +questionMarks + ')'; 
-				//console.log(this.query);
+				console.log(this.query);
 				this.ExecuteRun(this.query, Values).then((insertRes:any)=>{
 					resolve(insertRes);
 				})

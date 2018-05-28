@@ -13,11 +13,11 @@ import { IonicServicesProvider } from '../providers/ionic-services/ionic-service
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = WelcomePage;
+  rootPage: any;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public IonicProvider:IonicServicesProvider,public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public IonicProvider:IonicServicesProvider, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
   }
 
@@ -30,6 +30,7 @@ export class MyApp {
   }
   database(){
     this.IonicProvider.PlatformCheck("darlic").then(()=>{
+      this.rootPage=WelcomePage;
       this.pages = [
        { title: 'home', component: DashboardPage }
       ];
