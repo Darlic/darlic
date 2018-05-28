@@ -40,15 +40,15 @@
 	               
 	               <ion-item>
 	                  <ion-label floating class="label-color">Email</ion-label>
-	                  <ion-input type="email" formControlName="Email"  required
+	                  <ion-input type="email" formControlName="email"  required
                 pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"></ion-input>
 	               </ion-item>
-	                <div *ngIf="signup.controls.Email.invalid && signup.controls.Email.touched">
+	                <div *ngIf="signup.controls.email.invalid && signup.controls.email.touched">
 	               <!-- 	<p class="validation-color">Email is required</p> -->
-	               	<div *ngIf="signup.controls.Email.errors.required">
+	               	<div *ngIf="signup.controls.email.errors.required">
                			<p class="validation-color">Email is required</p>
 	               	</div>
-	               	<div *ngIf="signup.controls.Email.errors.pattern">
+	               	<div *ngIf="signup.controls.email.errors.pattern">
                			<p class="validation-color">Email is not valid</p>
 	               	</div>
 	               </div>
