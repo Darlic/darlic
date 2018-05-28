@@ -20,8 +20,7 @@ export class MyApp {
   constructor(public IonicProvider:IonicServicesProvider, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
   }
-
-  initializeApp() {
+  initializeApp(){
     this.platform.ready().then(() => {
       //this.statusBar.styleDefault();
       this.splashScreen.hide();
@@ -36,7 +35,6 @@ export class MyApp {
       ];
     });
   }
-
   openPage(page){
     this.nav.setRoot(page.component);
   }
