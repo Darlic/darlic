@@ -42,18 +42,17 @@
 		                  	<ion-label floating class="label-color">Password</ion-label>
 		                  	<ion-input type="password" formControlName="password" ></ion-input>
 		               	</ion-item>
+		               		<div *ngIf="loginform.controls.password.invalid && loginform.controls.password.touched">
+				               	<div *ngIf="loginform.controls.password.errors.required">
+			               			<p class="validation-color">Password is required</p>
+				               	</div>
+				               </div>	
 		            	</ion-list>
-		            	 <div *ngIf="loginform.controls.password.invalid && loginform.controls.password.touched">
-	               	<div *ngIf="loginform.controls.password.errors.required">
-               			<p class="validation-color">Password is required</p>
-	               	</div>
-	               	
-	               </div>
-		            <p *ngIf="Error != undefined">User not exits</p>
+		            	 
 		            <div class="center-align">
 		               <button class="btn-login" (click)="login(loginform)">Login</button>
 		            </div>
-
+		            <p class="validation-color" *ngIf="Error != undefined">User Not Exits</p>
 		        </form>
 	            <div class="forget-pwd">
 	            	<span>Forget Password</span>
