@@ -1,10 +1,8 @@
 page-dashboard {
 					$min-font-weight:300;
-					.toolbar-background-ios{
+					.header .toolbar-background{
 						background-color:#37474f;
-					}
-					.header-ios .toolbar-background-ios{
-						border-bottom:1px solid #ffffff;
+						border:1px solid #ffffff;	
 					}
 					.menu-icon{
 						color:#ffffff;
