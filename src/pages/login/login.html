@@ -49,10 +49,11 @@
 	               	</div>
 	               	
 	               </div>
-
+		            <p *ngIf="Error != undefined">User not exits</p>
 		            <div class="center-align">
 		               <button class="btn-login" (click)="login(loginform)">Login</button>
 		            </div>
+
 		        </form>
 	            <div class="forget-pwd">
 	            	<span>Forget Password</span>
