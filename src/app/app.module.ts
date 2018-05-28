@@ -14,8 +14,10 @@ import {WelcomePage} from '../pages/welcome/welcome';
 import {SignupPage} from '../pages/signup/signup';
 import {LoginPage} from '../pages/login/login';
 import {DashboardPage} from '../pages/dashboard/dashboard';
-
+// import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
+
   declarations: [
     MyApp,
     HomePage,
@@ -27,6 +29,7 @@ import {DashboardPage} from '../pages/dashboard/dashboard';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
