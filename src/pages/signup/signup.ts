@@ -57,15 +57,11 @@ export class SignupPage {
     }else{
     console.log(signup.value);
     this.insertSignup(signup.value).then(()=>{
-
-  	
     })
     }
   }
-
-  
   login(){
-     this.navCtrl.setRoot(LoginPage); 
+    this.navCtrl.setRoot(LoginPage); 
   }
 
 }
