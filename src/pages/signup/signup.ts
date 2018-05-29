@@ -4,6 +4,8 @@ import {LoginPage} from '../../pages/login/login';
 import { FormArray, FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { IonicServicesProvider } from '../../providers/ionic-services/ionic-services';
 import { HttpClient } from '@angular/common/http';
+import { ToastController } from 'ionic-angular';
+
 @IonicPage()
 @Component({
   selector: 'page-signup',
@@ -11,19 +13,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SignupPage {
   signup:FormGroup;
-  constructor(public http:HttpClient,public IonicProvider:IonicServicesProvider, public fb:FormBuilder,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private toastCtrl: ToastController,public http:HttpClient,public IonicProvider:IonicServicesProvider, public fb:FormBuilder,public navCtrl: NavController, public navParams: NavParams) {
     this.createSignup();
-    //this.createTable();
-  }
-  createTable(){
-    return new Promise((resolve,reject)=>{
-      let data=[];
-      let table=['firstname','lastname','email','password'];
-      for(let key in table){
-        data.push(table[key]+ ' TEXT');
-      }
-     // this.IonicProvider.CreateTable('SignUp', data);
-    })
   }
   createSignup() {
     this.signup=this.fb.group({
@@ -35,36 +26,43 @@ export class SignupPage {
     })
   }
   insertSignup(data){
-    // console.log(data);
-    // let col=[];
-    // let val=[]
-   return new Promise((resolve,reject)=>{
-    //   for(let key in data){
-    //     col.push(key);
-    //     val.push(data[key]);
-    //   }  
-    //   this.IonicProvider.Insert("SignUp",col,val).then((rsult:any)=>{
-    //     console.log("resul");
-    //     this.navCtrl.setRoot(LoginPage);
-    //   })
-    console.log(data);
-    data["api_key"]= '1254kijuyq';
-    console.log(data);
-    this.http.post('http://darlic.com/api/android/', data).subscribe((result:any)=>{
-        console.log(result);
+    return new Promise((resolve,reject)=>{
+      let formData = new FormData;
+      formData.append('email',data.email);
+      formData.append('first_name',data.firstName);
+      formData.append('last_name',data.lastName);
+      formData.append('password',data.password);
+      formData.append('api_key','1254kijuyq');
+      formData.append('action','register');
+      this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
+        resolve(result);
+        console.log(result.message);
+        if(result.status != 'success'){
+         
+        }
+      })
     })
-
-    })
-    
+  }
+  presentToast(message,duration,position){
+    let toast = this.toastCtrl.create({
+      message: message,
+      duration: duration,
+      position: position
+    });
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+    toast.present();
   }
   submit(signup){
     if(!(signup.valid)){
       console.log('not valid');
       this.signup;
     }else{
-    console.log(signup.value);
-    this.insertSignup(signup.value).then(()=>{
-    })
+      this.insertSignup(signup.value).then((result)=>{
+        console.log(result);
+        this.navCtrl.setRoot(LoginPage); 
+      })
     }
   }
   login(){

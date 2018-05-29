@@ -4,6 +4,8 @@ import {DashboardPage} from '../../pages/dashboard/dashboard';
 import {SignupPage} from '../../pages/signup/signup';
 import { FormArray, FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { IonicServicesProvider } from '../../providers/ionic-services/ionic-services';
+import { HttpClient } from '@angular/common/http';
+
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -12,48 +14,44 @@ import { IonicServicesProvider } from '../../providers/ionic-services/ionic-serv
 export class LoginPage {
   loginform:FormGroup;
   Error:any;
-  constructor(public IonicProvider:IonicServicesProvider,public fb:FormBuilder, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public IonicProvider:IonicServicesProvider,public http:HttpClient, public fb:FormBuilder, public navCtrl: NavController, public navParams: NavParams) {
   this.createLogin();
   }
   createLogin(){
     this.loginform=this.fb.group({
-      Email:["",Validators.required],
+      email:["",Validators.required],
       password:["",Validators.required],
-     
     })
   }
-  ionViewDidLoad() {
+  ionViewDidLoad(){
     console.log('ionViewDidLoad LoginPage');
   }
   login(data){
-     if(!(data.valid)){
+    if(!(data.valid)){
       console.log('not valid');
       this.loginform;
     }else{
-
-    console.log(data.value);
-    this.conditionCheck(data.value).then(()=>{
-
+    this.conditionCheck(data.value).then((result:any)=>{
+      console.log(result);
+      this.navCtrl.setRoot(DashboardPage);
     })
-    //this.navCtrl.setRoot(LoginPage);
-  //	this.navCtrl.setRoot(DashboardPage);
     }
   }
   conditionCheck(data){
-    return new Promise((resolve,reject)=>{
-     this.IonicProvider.MultipleSelectWhere("SignUp","Email","'"+data["Email"]+"'", "password" ,"'"+data['password']+"'").then((survey_meta:any)=>{
-       console.log(survey_meta.rows.length);
-       if(survey_meta.rows.length >= 1){
-         console.log("exitst");
-         this.navCtrl.setRoot(DashboardPage);
-       }else{
-         setTimeout(()=>{
-            this.Error="dkjf";
-         },400)
-         this.Error='';
-         console.log(this.Error);
-           console.log("not exitst");
-       }
+    return new Promise((resolve,reject)=>{ 
+      console.log(data);
+      let formData=new FormData();
+      formData.append('email', data.email)
+      formData.append('password',data.password);
+      formData.append('api_key','1254kijuyq');
+      formData.append('action','login');
+      this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
+        console.log(result);  
+        resolve(result);
+        console.log(result.message);
+        if(result.status != 'success'){
+          console.log(result.message);
+        }
       })
     })
   }
