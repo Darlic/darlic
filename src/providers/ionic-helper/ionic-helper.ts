@@ -16,7 +16,7 @@ export class IonicHelperProvider {
 	  });
 	  alert.present();
   }
-   presentToast(message,duration,position) {
+  presentToast(message,duration,position){
     let toast = this.toastCtrl.create({
       message: message,
        duration: duration,
@@ -48,15 +48,15 @@ export class IonicHelperProvider {
   wifi(){
     return new Promise((resolve,reject)=>{
       if(this.network.onConnect().subscribe()){
-         console.log(this.network.type);
-      if (this.network.type === 'wifi') {
-        this.showAlert('Wifi connected','you got a Wifi Connection');  
-        resolve("connection connected");
-      }else{
-        this.showAlert('Disconnected ','Wifi Connection has been lost'); 
-        resolve("connection lost"); 
-      }
-     }  
+        console.log(this.network.type);
+        if(this.network.type === 'wifi'){
+          this.showAlert('Wifi connected','you got a Wifi Connection');  
+          resolve("connection connected");
+        }else{
+          this.showAlert('Disconnected','Wifi Connection has been lost'); 
+          resolve("connection lost"); 
+        }
+      }  
     })
 	}
 

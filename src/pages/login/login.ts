@@ -6,6 +6,7 @@ import { FormArray, FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { IonicServicesProvider } from '../../providers/ionic-services/ionic-services';
 import { HttpClient } from '@angular/common/http';
 import { IonicHelperProvider } from '../../providers/ionic-helper/ionic-helper';
+
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -33,11 +34,11 @@ export class LoginPage {
       console.log('not valid');
       this.loginform;
     }else{
-     this.spinner=true;
-    this.conditionCheck(data.value).then((result:any)=>{
-      console.log(result);
-      this.navCtrl.setRoot(DashboardPage);
-    })
+      this.spinner=true;
+      this.conditionCheck(data.value).then((result:any)=>{
+        console.log(result);
+        this.navCtrl.setRoot(DashboardPage);
+      })
     }
   }
   conditionCheck(data){
@@ -48,7 +49,7 @@ export class LoginPage {
       formData.append('api_key','1254kijuyq');
       formData.append('action','login');
       this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
-         this.spinner=false;
+        this.spinner=false;
         this.helper.presentToast(result.message,1000,'top');
         if(result.status == 'success'){
           resolve(result);
