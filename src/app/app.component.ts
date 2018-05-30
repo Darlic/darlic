@@ -12,9 +12,7 @@ import { IonicServicesProvider } from '../providers/ionic-services/ionic-service
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
   rootPage: any;
-
   pages: Array<{title: string, component: any}>;
 
   constructor(public IonicProvider:IonicServicesProvider, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
