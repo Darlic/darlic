@@ -14,8 +14,10 @@ import { IonicHelperProvider } from '../../providers/ionic-helper/ionic-helper';
 export class LoginPage {
   loginform:FormGroup;
   Error:any;
+  spinner:any
   constructor(public helper:IonicHelperProvider,public IonicProvider:IonicServicesProvider,public http:HttpClient, public fb:FormBuilder, public navCtrl: NavController, public navParams: NavParams) {
   this.createLogin();
+  this.spinner=false;
   }
   createLogin(){
     this.loginform=this.fb.group({
@@ -31,7 +33,7 @@ export class LoginPage {
       console.log('not valid');
       this.loginform;
     }else{
-      
+     this.spinner=true;
     this.conditionCheck(data.value).then((result:any)=>{
       console.log(result);
       this.navCtrl.setRoot(DashboardPage);
@@ -46,6 +48,7 @@ export class LoginPage {
       formData.append('api_key','1254kijuyq');
       formData.append('action','login');
       this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
+         this.spinner=false;
         this.helper.presentToast(result.message,1000,'top');
         if(result.status == 'success'){
           resolve(result);
