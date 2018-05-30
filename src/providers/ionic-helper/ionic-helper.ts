@@ -19,8 +19,9 @@ export class IonicHelperProvider {
    presentToast(message,duration,position) {
     let toast = this.toastCtrl.create({
       message: message,
-      duration: duration,
-      position: position
+       duration: duration,
+      position: position,
+      cssClass: "toastCss",
     });
 
     toast.onDidDismiss(() => {

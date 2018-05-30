@@ -16,7 +16,7 @@ export class SignupPage {
   constructor(private toastCtrl: ToastController,public http:HttpClient,public IonicProvider:IonicServicesProvider, public fb:FormBuilder,public navCtrl: NavController, public navParams: NavParams) {
     this.createSignup();
   }
-  createSignup() {
+  createSignup(){
     this.signup=this.fb.group({
       firstName:["",Validators.required],
       lastName:["",Validators.required],

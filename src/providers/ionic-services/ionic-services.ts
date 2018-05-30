@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Nav, Platform ,ToastController} from 'ionic-angular';
+import { Nav, Platform } from 'ionic-angular';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 @Injectable()
@@ -12,7 +12,7 @@ export class IonicServicesProvider {
 	slugs = [];
 	dataset:any;
 	AppkitProducts=[];
-  constructor(private platform: Platform, public http: HttpClient,public sqlite:SQLite){
+  constructor( private platform: Platform, public http: HttpClient,public sqlite:SQLite){
     console.log('Hello IonicServicesProvider Provider');
   }
   dbClose(){
@@ -21,6 +21,7 @@ export class IonicServicesProvider {
 			resolve(this.db);
 		})
 	}
+	
 	PlatformCheck(databaseName){
 		return new Promise ((resolve,reject)=>{
 			if(this.platform.is('cordova')){
@@ -253,8 +254,8 @@ export class IonicServicesProvider {
         for(var i=0; i < data.rows.length; i++) {
             row[i] = data.rows.item(i)
         }
-         let SurveyData = row;
-         resolve(SurveyData);
+        let SurveyData = row;
+        resolve(SurveyData);
 		})
 	}
 

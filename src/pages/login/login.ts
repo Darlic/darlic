@@ -5,7 +5,7 @@ import {SignupPage} from '../../pages/signup/signup';
 import { FormArray, FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { IonicServicesProvider } from '../../providers/ionic-services/ionic-services';
 import { HttpClient } from '@angular/common/http';
-
+import { IonicHelperProvider } from '../../providers/ionic-helper/ionic-helper';
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class LoginPage {
   loginform:FormGroup;
   Error:any;
-  constructor(public IonicProvider:IonicServicesProvider,public http:HttpClient, public fb:FormBuilder, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public helper:IonicHelperProvider,public IonicProvider:IonicServicesProvider,public http:HttpClient, public fb:FormBuilder, public navCtrl: NavController, public navParams: NavParams) {
   this.createLogin();
   }
   createLogin(){
@@ -31,6 +31,7 @@ export class LoginPage {
       console.log('not valid');
       this.loginform;
     }else{
+      
     this.conditionCheck(data.value).then((result:any)=>{
       console.log(result);
       this.navCtrl.setRoot(DashboardPage);
@@ -38,19 +39,16 @@ export class LoginPage {
     }
   }
   conditionCheck(data){
-    return new Promise((resolve,reject)=>{ 
-      console.log(data);
+    return new Promise((resolve,reject)=>{
       let formData=new FormData();
       formData.append('email', data.email)
       formData.append('password',data.password);
       formData.append('api_key','1254kijuyq');
       formData.append('action','login');
       this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
-        console.log(result);  
-        resolve(result);
-        console.log(result.message);
-        if(result.status != 'success'){
-          console.log(result.message);
+        this.helper.presentToast(result.message,1000,'top');
+        if(result.status == 'success'){
+          resolve(result);
         }
       })
     })

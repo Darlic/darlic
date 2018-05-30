@@ -68,4 +68,15 @@ page-login {
 			font-size:12px;
 			text-align:center;
 		}
+
+		
 }
+		//for toast i.e applied to all the pages
+	  .toast-md .toast-wrapper.toast-top{
+		 	top: 38px;
+		}
+		.toast-md .toast-wrapper{
+			width: 89%;
+			background-color:black;
+			text-align:center;
+		}
