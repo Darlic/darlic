@@ -7,6 +7,8 @@ import { ListPage } from '../pages/list/list';
 import {WelcomePage} from '../pages/welcome/welcome';
 import {DashboardPage} from '../pages/dashboard/dashboard';
 import { IonicServicesProvider } from '../providers/ionic-services/ionic-services';
+import {ListRoutingPage} from '../pages/list-routing/list-routing';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -27,9 +29,10 @@ export class MyApp {
   }
   database(){
     this.IonicProvider.PlatformCheck("darlic").then(()=>{
-      this.rootPage=WelcomePage;
+      this.rootPage=DashboardPage;
       this.pages = [
-       { title: 'home', component: DashboardPage }
+       { title: 'home', component: DashboardPage },
+       {title: 'list', component: ListRoutingPage }
       ];
     });
   }

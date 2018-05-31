@@ -16,6 +16,13 @@ import {LoginPage} from '../pages/login/login';
 import {DashboardPage} from '../pages/dashboard/dashboard';
 // import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
+import {ListRoutingPage} from '../pages/list-routing/list-routing';
+import {OrderPage} from '../pages/order/order';
+import {ProductsPage} from '../pages/products/products';
+import {ProjectsPage}  from '../pages/projects/projects';
+import {SupportPage} from '../pages/support/support';
+
+
 @NgModule({
 
   declarations: [
@@ -25,13 +32,19 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomePage,
     SignupPage,
     LoginPage,
-    DashboardPage
+    DashboardPage,
+    ListRoutingPage,
+    OrderPage,
+    ProductsPage,
+    ProjectsPage,
+    SupportPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
+
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -40,7 +53,12 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomePage,
     SignupPage,
     LoginPage,
-    DashboardPage
+    DashboardPage,
+    ListRoutingPage,
+ OrderPage,
+    ProductsPage,
+    ProjectsPage,
+    SupportPage
   ],
   providers: [
     StatusBar,

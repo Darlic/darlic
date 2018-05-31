@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>listRouting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+<button ion-button (click)="orderData()" [ngClass]="(order == true)?'active':'not'">order</button>
+<button ion-button (click)="productData()" [ngClass]="(product == true)?'active':'not'">Products</button>
+<button ion-button (click)="projectsData()" [ngClass]="(projects == true)?'active':'not'">Projects</button>
+<button ion-button (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</button>
+<div *ngIf="order == true"  class="clearfix">
+	<page-order></page-order>
+</div>
+<div *ngIf="product == true" class="clearfix">
+	<page-products></page-products>
+</div>
+<div *ngIf="projects == true"  class="clearfix">
+	<page-projects></page-projects>
+</div>
+<div *ngIf="support == true" class="clearfix">
+	<page-support></page-support>
+</div>
+</ion-content>

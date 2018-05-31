@@ -11,60 +11,62 @@
 </ion-header>
 
 <ion-content>
-			<ion-row>
-					<ion-slides>
-						  <ion-slide>
-						    <img src="assets/imgs/digital-marketing-classes-600x369.jpg">
-						  </ion-slide>
-						  <ion-slide>
-						  	 <img src="assets/imgs/easy-way-seo-improvements-600x369.jpg">	
-						  </ion-slide>
-						  <ion-slide>
-						    <img src="assets/imgs/infographic-life-expectancy-600x369.jpg">
-						  </ion-slide>
-						  <ion-slide>
-						    <img src="assets/imgs/in-house-seo-team-600x369.jpg">
-						  </ion-slide>
-						  <ion-slide>
-						    <img src="assets/imgs/website-ab-testing-tool-600x369.jpg">
-						  </ion-slide>
-						</ion-slides>
-			</ion-row>
-			<!-- <ion-row>
-				<ion-col col-4></ion-col>
-				<ion-col col-4>
-					<div>
-						<h5>Services</h5>
-					</div>
-				</ion-col>
-				<ion-col col-4></ion-col>
-			</ion-row> -->
-			<ion-row class="wrapper">
-				<ion-col col-6>
-					<div class="order-wrapper">
-					  <ion-icon class="order-icon" name="cart"></ion-icon>
-					  <p class="order-head">Order</p>
-					</div>
-				</ion-col>
-				<ion-col col-6>
-					<div class="product-wrapper">
-					  <ion-icon class="product-icon" name="list-box"></ion-icon>
-					  <p class="product-head">Products</p>
-					</div>
-				</ion-col>
-			</ion-row>
-			<ion-row class="wrapper">
-				<ion-col col-6>
-					<div class="project-wrapper">
-					    <ion-icon class="project-icon" name="apps"></ion-icon>
-					  <p class="project-head">Projects</p>
-					</div>
-				</ion-col>
-				<ion-col col-6>
-					<div class="support-wrapper">
-					  <ion-icon class="support-icon" name="help-buoy"></ion-icon>
-					  <p class="suppot-head">Support</p>
-					</div>
-				</ion-col>
-			</ion-row>
+	<ion-row>
+		<ion-slides>
+		  <ion-slide>
+		    <img src="assets/imgs/digital-marketing-classes-600x369.jpg">
+		  </ion-slide>
+		  <ion-slide>
+		  	 <img src="assets/imgs/easy-way-seo-improvements-600x369.jpg">	
+		  </ion-slide>
+		  <ion-slide>
+		    <img src="assets/imgs/infographic-life-expectancy-600x369.jpg">
+		  </ion-slide>
+		  <ion-slide>
+		    <img src="assets/imgs/in-house-seo-team-600x369.jpg">
+		  </ion-slide>
+		  <ion-slide>
+		    <img src="assets/imgs/website-ab-testing-tool-600x369.jpg">
+		  </ion-slide>
+		</ion-slides>
+	</ion-row>
+	<!-- <ion-row>
+		<ion-col col-4></ion-col>
+		<ion-col col-4>
+			<div>
+				<h5>Services</h5>
+			</div>
+		</ion-col>
+		<ion-col col-4></ion-col>
+	</ion-row> -->
+
+
+	<ion-row class="wrapper">
+		<ion-col col-6 (click)="order()">
+			<div class="order-wrapper">
+			  <ion-icon class="order-icon" name="cart"></ion-icon>
+			  <p class="order-head">Order</p>
+			</div>
+		</ion-col>
+		<ion-col col-6 (click)="Products()">
+			<div class="product-wrapper">
+			  <ion-icon class="product-icon" name="list-box"></ion-icon>
+			  <p class="product-head">Products</p>
+			</div>
+		</ion-col>
+	</ion-row>
+	<ion-row class="wrapper">
+		<ion-col col-6 (click)="Projects()">
+			<div class="project-wrapper">
+			  <ion-icon class="project-icon" name="apps"></ion-icon>
+			  <p class="project-head">Projects</p>
+			</div>
+		</ion-col>
+		<ion-col col-6 (click)="Support()">
+			<div class="support-wrapper">
+			  <ion-icon class="support-icon" name="help-buoy"></ion-icon>
+			  <p class="suppot-head">Support</p>
+			</div>
+		</ion-col>
+	</ion-row>
 </ion-content>

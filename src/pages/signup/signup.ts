@@ -22,7 +22,6 @@ export class SignupPage {
       lastName:["",Validators.required],
       email:["",Validators.required],
       password:["",Validators.required],
-     
     })
   }
   insertSignup(data){
