@@ -1,16 +1,30 @@
 
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>listRouting</ion-title>
-  </ion-navbar>
-
+  	<div class="bar bar-header bar-dark">
+    <ion-icon class="close-icon" name="close"></ion-icon>
+  	<span class="header-content">Products</span>	
+</div>
+    <!-- <ion-title>listRouting</ion-title> -->
+    <!-- <ion-icon class="close-icon" name="close"></ion-icon>
+    <p class="header-content">Products</p>
+  </ion-navbar> -->
+  
 </ion-header>
-<ion-content padding>
-<button ion-button (click)="orderData()" [ngClass]="(order == true)?'active':'not'">order</button>
-<button ion-button (click)="productData()" [ngClass]="(product == true)?'active':'not'">Products</button>
-<button ion-button (click)="projectsData()" [ngClass]="(projects == true)?'active':'not'">Projects</button>
-<button ion-button (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</button>
+
+<ion-content>
+	<div class="icon-menu">
+		<ion-icon class="icon-item " (click)="orderData()" [ngClass]="(order == true)?'active':'not'" name="cart"></ion-icon>
+		<ion-icon class="icon-item" (click)="productData()" [ngClass]="(product == true)?'active':'not'" name="list-box"></ion-icon>
+		<ion-icon class="icon-item" (click)="projectsData()" [ngClass]="(projects == true)?'active':'not'" name="apps"></ion-icon>
+		<ion-icon class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'" name="help-buoy"></ion-icon>
+	</div>
+	
+<!-- <div class="btn-area">
+	<button class="btn-text" ion-button (click)="orderData()" [ngClass]="(order == true)?'active':'not'">Order</button>
+<button class="btn-text" ion-button (click)="productData()" [ngClass]="(product == true)?'active':'not'">Products</button>
+<button class="btn-text" ion-button (click)="projectsData()" [ngClass]="(projects == true)?'active':'not'">Projects</button>
+<button class="btn-text" ion-button (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</button>
+</div> -->
 <div *ngIf="order == true"  class="clearfix">
 	<page-order></page-order>
 </div>

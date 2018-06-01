@@ -1,6 +1,42 @@
 page-list-routing{
 	.active{
-		background-color:red;
+		color:#fff !important;
+		border-color:#fff !important;
 	}
+	.btn-text{
+		font-size:12px;
+		font-weight:300;
+		color:#fff;
+	}
+	.btn-area{
+		text-align:center;
+		padding:5px 0px 5px 0px;
+	}
+	.icon-menu{
+		font-size:25px;
+		text-align:center;
+		background-color:#01579b;
+		color:#0288d1;
+		box-shadow: 0px 1px 10px 2px grey;
+
+	}	
+	.icon-item{
+		padding:8px 15px 2px 15px;
+		border-bottom:1px solid #0288d1;
+	}
+	.close-icon{
+		color:#fff;
+		font-size:20px;
+		text-align:center;
 		
+	}
+	.header-content{
+		font-size:20px;
+		color:#fff;
+		display:inline-block;
+		padding-left:16px;
+	}
+	.bar-header{
+		background-color:#212121;
+	}
 }
