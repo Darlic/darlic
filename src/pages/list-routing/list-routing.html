@@ -7,7 +7,7 @@
   		</ion-col>
   		<ion-col col-10>
   			<div>
-  				<h5>Products</h5>
+  				<h4>Products</h4>
   			</div>
   		</ion-col>
   	</ion-row>
@@ -15,12 +15,22 @@
 
 <ion-content>
 	<div class="icon-menu">
+		<span class="icon-item" (click)="orderData()" [ngClass]="(order == true)?'active':'not'">Order</span>
+		<span class="icon-item" (click)="productData()" [ngClass]="(product == true)?'active':'not'">Products</span>
+		<span class="icon-item" (click)="projectsData()" [ngClass]="(projects == true)?'active':'not'">Projects</span>
+		<span class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</span>
+		<span class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</span>
+		<span class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</span>
+		<span class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</span>
+		<span class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'">Support</span>
+	</div>
+	<!-- <div class="icon-menu">
 		<ion-icon class="icon-item " (click)="orderData()" [ngClass]="(order == true)?'active':'not'" name="cart"></ion-icon>
 		<ion-icon class="icon-item" (click)="productData()" [ngClass]="(product == true)?'active':'not'" name="list-box"></ion-icon>
 		<ion-icon class="icon-item" (click)="projectsData()" [ngClass]="(projects == true)?'active':'not'" name="apps"></ion-icon>
 		<ion-icon class="icon-item" (click)="supportData()" [ngClass]="(support == true)?'active':'not'" name="help-buoy"></ion-icon>
-	</div>
-	
+		
+	</div> -->
 <!-- <div class="btn-area">
 	<button class="btn-text" ion-button (click)="orderData()" [ngClass]="(order == true)?'active':'not'">Order</button>
 <button class="btn-text" ion-button (click)="productData()" [ngClass]="(product == true)?'active':'not'">Products</button>

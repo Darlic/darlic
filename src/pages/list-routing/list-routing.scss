@@ -13,20 +13,25 @@ page-list-routing{
 		padding:5px 0px 5px 0px;
 	}
 	.icon-menu{
-		font-size:25px;
+		font-size:22px;
+		font-weight:300;
 		text-align:center;
-		background-color:#01579b;
-		color:#0288d1;
+		background-color:#0277bd;
+		color:#81d4fa;
+		padding:10px 0px 10px 0px;
 		box-shadow: 0px 1px 10px 2px grey;
-
+    	overflow: scroll;
+    	white-space: nowrap;
 	}	
 	.icon-item{
-		padding:8px 15px 2px 15px;
+		padding: 0px 5px 2px 5px;
+		margin:0px 15px 0px 15px;
 		border-bottom:1px solid #0288d1;
+		font-size:18px;
 	}
 	.close-icon{
 		color:#fff;
-		font-size:15px;
+		font-size:20px;
 		text-align:center;
 		
 	}
@@ -36,14 +41,13 @@ page-list-routing{
 		font-weight:300;
 	}
 	.header-bar{
-		padding:11px;
+		padding:12px;
 		background-color: #01579b;
-    	border-bottom: 1px solid #fff;
+
 	}
-	h5{
+	h4{
 		font-weight:300;
 		color:#fff;
 		margin:0px;
-		letter-spacing: 0.1rem;
 	}
 }
