@@ -14,8 +14,6 @@ export class ListRoutingPage {
   constructor(public navCtrl: NavController, public navParams: NavParams){
   }
   ionViewDidLoad() {
-   
-  	
     switch (this.navParams.get('page')) {
       case "order":
         this.order = true;
@@ -32,6 +30,9 @@ export class ListRoutingPage {
       default:
         break;
     }
+  }
+  close(){
+    this.navCtrl.pop();
   }
   orderData(){
     this.collectionData(true,false,false,false) ;
