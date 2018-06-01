@@ -36,7 +36,15 @@ page-list-routing{
 		display:inline-block;
 		padding-left:16px;
 	}
-	.bar-header{
-		background-color:#212121;
+	.toolbar-background{
+		background-color:#263238;	
+	}
+	.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+		color:#fff;
+	}
+	h4{
+		font-weight:300;
+		color:#ffffff;
+		margin:0px;
 	}
 }
