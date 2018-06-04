@@ -29,10 +29,14 @@ export class MyApp {
   }
   database(){
     this.IonicProvider.PlatformCheck("darlic").then(()=>{
-      this.rootPage=DashboardPage;
+      if(localStorage.getItem("userId") != undefined){
+        this.rootPage=DashboardPage
+      }else{
+        this.rootPage = WelcomePage;
+      }
       this.pages = [
-       { title: 'home', component: DashboardPage },
-       {title: 'list', component: ListRoutingPage }
+        { title: 'home', component: DashboardPage },
+        {title: 'list', component: ListRoutingPage }
       ];
     });
   }

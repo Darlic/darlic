@@ -21,7 +21,7 @@ import {OrderPage} from '../pages/order/order';
 import {ProductsPage} from '../pages/products/products';
 import {ProjectsPage}  from '../pages/projects/projects';
 import {SupportPage} from '../pages/support/support';
-
+import{ProjectDetailsPage} from '../pages/project-details/project-details'
 
 @NgModule({
 
@@ -37,7 +37,8 @@ import {SupportPage} from '../pages/support/support';
     OrderPage,
     ProductsPage,
     ProjectsPage,
-    SupportPage
+    SupportPage,
+    ProjectDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -55,10 +56,11 @@ import {SupportPage} from '../pages/support/support';
     LoginPage,
     DashboardPage,
     ListRoutingPage,
- OrderPage,
+    OrderPage,
     ProductsPage,
     ProjectsPage,
-    SupportPage
+    SupportPage,
+    ProjectDetailsPage
   ],
   providers: [
     StatusBar,

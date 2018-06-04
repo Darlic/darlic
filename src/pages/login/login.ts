@@ -38,6 +38,7 @@ export class LoginPage {
       this.conditionCheck(data.value).then((result:any)=>{
         console.log(result);
         this.navCtrl.setRoot(DashboardPage);
+        localStorage.setItem("userId",result.data["ID"]);
       })
     }
   }

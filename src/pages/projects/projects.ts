@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ProjectsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import{ProjectDetailsPage} from '../../pages/project-details/project-details'
+import { HttpClient } from '@angular/common/http';
 
 @IonicPage()
 @Component({
@@ -14,12 +9,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'projects.html',
 })
 export class ProjectsPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+	userId;
+  constructor(public http:HttpClient, public navCtrl: NavController, public navParams: NavParams) {
+    this.ionViewDidLoad();
   }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProjectsPage');
+    this.userId=localStorage.getItem("userId");
+    console.log(this.userId);
+    let formData=new FormData();
+    formData.append('api_key','1254kijuyq');
+    formData.append('action','websites');
+    formData.append('userid',this.userId);
+    this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
+         console.log(result);
+    })
+  }
+  detailPage(){
+  	this.navCtrl.push(ProjectDetailsPage);
   }
 
 }
