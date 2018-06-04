@@ -11,7 +11,7 @@ export class ProductsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   ionViewDidLoad() {
-
+  	
   }
 
 }

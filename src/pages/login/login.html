@@ -20,17 +20,19 @@
 						<ion-list padding>
 		               <ion-item>
 		                  <ion-label floating class="label-color">Email</ion-label>
-		                  <ion-input type="email" formControlName="email"  required
-                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"></ion-input>
+		                   <ion-input type="email" formControlName="email"  required
+                ></ion-input>
+		                <!--   <ion-input type="email" formControlName="email"  required
+                pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"></ion-input> -->
 		               </ion-item>
 		               <div *ngIf="loginform.controls.email.invalid && loginform.controls.email.touched">
 	              
 	               	<div *ngIf="loginform.controls.email.errors.required">
                			<p class="validation-color">Email is required</p>
 	               	</div>
-	               	<div *ngIf="loginform.controls.email.errors.pattern">
+	               <!-- 	<div *ngIf="loginform.controls.email.errors.pattern">
                			<p class="validation-color">Email is not valid</p>
-	               	</div>
+	               	</div> -->
 	               </div>
 
 		               	<ion-item>
