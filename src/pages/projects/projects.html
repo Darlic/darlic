@@ -1,40 +1,22 @@
 
 <!-- <ion-content padding> -->
-<br>
-	<button ion-button color="secondary" ><a href="http://darlic.com/create/">Add New Website</a></button>
-	<ion-row class="products-row" (click)="detailPage()">
-		<!--<ion-col col-3>
-			 <div class="icon-wordpress"> 
-				<ion-icon name="logo-wordpress"></ion-icon>
-			</div> 
-		</ion-col>-->
-		<ion-col col-9>
-			<div class="heading-content">
-				<h5>1 Wordpress hosting</h5>
-			</div>
-		</ion-col>
-		<ion-col col-3>
-			<div class="btn">
-				<button ion-button clear item-end>View</button>
-			</div>
-		</ion-col>
-	</ion-row>
-
-	<ion-row class="products-row">
-		<!--<ion-col col-3>
-			 <div class="icon-wordpress"> 
-				<ion-icon name="logo-wordpress"></ion-icon>
-			</div> 
-		</ion-col>-->
-		<ion-col col-9>
-			<div class="heading-content">
-				<h5>2 Wordpress hosting</h5>
-			</div>
-		</ion-col>
-		<ion-col col-3>
-			<div class="btn">
-				<button ion-button clear item-end>View</button>
-			</div>
-		</ion-col>
-	</ion-row>
+<button ion-button color="secondary" ><a href="http://darlic.com/create/">Add New Website</a></button>
+<div *ngIf="productLength != 0; else elsetag">
+	<div *ngFor="let products of product; let i = index ">
+		
+		<ion-row class="products-row" >
+			<ion-col col-9>
+				<div class="heading-content">
+					<h5> {{i+1}} {{products.blogname}}</h5>
+				</div>
+			</ion-col>
+			<ion-col col-3>
+				<div class="btn">
+					<button ion-button clear item-end (click)="detailPage(product.userblog_id)">View</button>
+				</div>
+			</ion-col>
+		</ion-row>
+	</div>
+</div>
+<ng-template #elsetag><p>Not exists</p></ng-template>
 <!-- </ion-content> -->

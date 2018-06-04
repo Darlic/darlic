@@ -10,22 +10,28 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProjectsPage {
 	userId;
+  product:any;
+  productLength:any;
   constructor(public http:HttpClient, public navCtrl: NavController, public navParams: NavParams) {
     this.ionViewDidLoad();
   }
   ionViewDidLoad() {
     this.userId=localStorage.getItem("userId");
-    console.log(this.userId);
     let formData=new FormData();
     formData.append('api_key','1254kijuyq');
     formData.append('action','websites');
     formData.append('userid',this.userId);
     this.http.post('http://darlic.com/api/android/', formData).subscribe((result:any)=>{
-         console.log(result);
-    })
+      console.log(result)
+      this.product=result.data.user_sites;
+      this.productLength=result.data.user_sites.length;
+      console.log(this.productLength);
+      console.log(this.product);
+    });
   }
-  detailPage(){
-  	this.navCtrl.push(ProjectDetailsPage);
+  detailPage(id){
+    console.log(id);
+  	//this.navCtrl.push(ProjectDetailsPage);
   }
 
 }
