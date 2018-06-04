@@ -4,5 +4,12 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-	
+	<div *ngIf="details">
+		<p>title: {{details.blogname}}</p>
+		<p>Domain : {{details.domain}}</p>
+		<p>siteurl : {{details.siteurl}}</p>
+		<button ion-button color="secondary"><a href="">Visit Website</a></button>
+<button ion-button color="secondary"><a href="">Admin Panel</a></button>
+
+	</div>
 </ion-content>
