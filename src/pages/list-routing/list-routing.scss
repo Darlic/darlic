@@ -15,9 +15,11 @@ page-list-routing{
 	.icon-menu{
 		font-weight:400;
 		text-align:center;
-		background-color:#0277bd;
+		background-color:#455a64;
+		// background-color:#0277bd;
+
 		color:#81d4fa;
-		padding:20px 0px 5px 0px;
+		padding:20px 0px 15px 0px;
 		// box-shadow: 0px 1px 10px 2px grey;
     	overflow: scroll;
     	white-space: nowrap;
@@ -40,7 +42,7 @@ page-list-routing{
 		font-weight:300;
 	}
 	.header-bar{
-		padding:5px;
+		padding:10px;
 		// background-color: #01579b;
 		background-color:#37474f;
 		// border-bottom:1px solid #ffffff
@@ -51,7 +53,7 @@ page-list-routing{
 		margin:0px;
 	}
 	.scroll-content{
-		margin-top:46px!important;
+		margin-top:56px!important;
 	}
 	.header-md::after{
 		background-image:none;
