@@ -69,5 +69,11 @@ page-signup {
 			font-weight:300;
 			font-size:12px;
 		}
+		.item-input-has-focus .label-md[stacked],
+.input-has-focus .label-md[stacked],
+.item-input-has-focus .label-md[floating],
+.input-has-focus .label-md[floating] {
+  color: #455a64!important;
+}
 
 }
