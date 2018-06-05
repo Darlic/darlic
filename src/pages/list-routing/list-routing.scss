@@ -1,7 +1,19 @@
 page-list-routing{
 	.active{
-		color:#fff !important;
-		border-color:#fff !important;
+		color:white!important;
+		border-color:white!important;
+	}
+	.tabs{
+		padding:16px 0px 0px 0px;
+		background-color: #455a64;
+	}
+	.segment-md .segment-button.segment-activated{
+		border-color:#fff;
+	}
+	.segment-md .segment-button{
+		color:#fff;
+		font-size: 1.5rem;
+		font-weight:400;
 	}
 	.btn-text{
 		font-size:12px;
@@ -27,7 +39,7 @@ page-list-routing{
 	.icon-item{
 		padding: 0px 4px 3px 4px;
 		margin:0px 8px 0px 8px;
-		border-bottom:1px solid #0288d1;
+		// border-bottom:1px solid #0288d1;
 		font-size:14px;
 	}
 	.close-icon{
@@ -57,5 +69,6 @@ page-list-routing{
 	}
 	.header-md::after{
 		background-image:none;
+		background-color:#37474f;
 	}
 }

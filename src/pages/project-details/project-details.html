@@ -1,15 +1,31 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>ProjectDetails</ion-title>
+     <div class="dashboard-heading">
+    	<h4>Project Details</h4>
+    </div>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-	<div *ngIf="details">
-		<p>title: {{details.blogname}}</p>
-		<p>Domain : {{details.domain}}</p>
-		<p>siteurl : {{details.siteurl}}</p>
-		<button ion-button color="secondary"><a href="">Visit Website</a></button>
-<button ion-button color="secondary"><a href="">Admin Panel</a></button>
+<ion-content>
+	<ion-row padding>
+		<ion-col col-12>
+			<div *ngIf="details" class="project-details">
+				<div class="title-content">
+					<p>Title : <span class="title-detail">{{details.blogname}}</span></p>
+				</div>
+				<div class="title-content">
+					<p>Domain : <span class="domain-detail">{{details.domain}}</span></p>
+				</div>
+				<div class="title-content">
+					<p>siteurl : <span class="siteurl-detail">{{details.siteurl}}</span></p>
+				</div>
+				
+			</div>
+			<div class="visitor-btn">
+				<button ion-button outline class="border-color"><a href="#">Visit Website</a></button>
+				<button ion-button outline class="border-color"><a href="#">Admin Panel</a></button>
+			</div>
+		</ion-col>
+	</ion-row>
 
-	</div>
+	
 </ion-content>

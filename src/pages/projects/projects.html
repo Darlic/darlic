@@ -1,14 +1,14 @@
 <!-- <ion-content padding> -->
-	<a href="http://darlic.com/create/">Add New Website</a>
+	<a href="http://darlic.com/create/">Add New Website</a>	
 <div *ngIf="productLength != 0; else elsetag">
 	<div *ngFor="let products of product; let i = index ">
 		<ion-row class="products-row" >
-			<ion-col col-9>
+			<ion-col col-7>
 				<div class="heading-content">
 					<p> {{i+1}} {{products.blogname}}</p>
 				</div>
 			</ion-col>
-			<ion-col col-3>
+			<ion-col col-5>
 				<div class="btn">
 					<button ion-button clear item-end (click)="detailPage(products)">View</button>
 				</div>

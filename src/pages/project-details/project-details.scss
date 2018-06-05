@@ -1,3 +1,61 @@
 page-project-details {
+			.header .toolbar-background{
+				background-color:#37474f;	
+			}
+			h4{
+				font-weight:300;
+				color:#ffffff;
+				margin:0px;
+			}
+			.project-details{
+				padding:40px;
+				border:2px solid #e8e8e8;
+				border-radius:4px;
+				box-shadow: 0px 0px 2px 1px #e8e8e8;
+			}
+			a{
+				text-decoration:none;
+				font-weight:400;
+				color:#0288d1;
+			}
+			.bar-button-default-md{
+				color:#fff;
+			}
+			.border-color{
+				border-color:#0288d1;
+			}
+			.project-icon{
+				font-size:40px;
+				color:white;
+			}
+			.title-detail{
+				margin-left:30px;
+				color:#0288d1;
+				font-size:14px;
+			}
+			.domain-detail{
+				margin-left:6px;
+				color:#0288d1;
+				font-size:14px;
+			}
+			.siteurl-detail{
+				margin-left:19px;
+				color:#0288d1;
+				font-size:14px;
+			}
 
+			p{
+				margin:0px;
+			}
+			.title-content{
+				font-size:16px;
+				font-weight:300;
+				color:#263238;
+				margin-bottom:20px;
+			}
+			.visitor-btn{
+				text-align:center;
+				padding:30px 0px 30px 0px;
+			}
+			
 }
