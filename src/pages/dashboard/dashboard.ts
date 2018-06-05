@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LoginPage} from '../../pages/login/login';
 import {ListRoutingPage} from '../../pages/list-routing/list-routing';
+
 @IonicPage()
 @Component({
   selector: 'page-dashboard',
@@ -9,8 +10,6 @@ import {ListRoutingPage} from '../../pages/list-routing/list-routing';
 })
 export class DashboardPage {
   constructor(public navCtrl: NavController, public navParams: NavParams){
-  }
-  ionViewDidLoad(){
   }
   order(){
   	this.navCtrl.push(ListRoutingPage,{'page':'order'})
