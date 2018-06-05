@@ -14,5 +14,60 @@
 
 
 <!-- <ion-content padding> -->
-<p>this is support page</p>
+<div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Order
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Product
+    </ion-segment-button>
+    <ion-segment-button value="apple">
+      Project
+    </ion-segment-button>
+    <ion-segment-button value="support">
+      Support
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-puppy-1.jpg">
+      </ion-thumbnail>
+      <h2>order</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Product</h2>
+    </ion-item>
+    ...
+  </ion-list>
+  <ion-list *ngSwitchCase="'apple'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Project</h2>
+    </ion-item>
+    ...
+  </ion-list>
+  <ion-list *ngSwitchCase="'support'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>support</h2>
+    </ion-item>
+    ...
+  </ion-list>
+</div>
 <!-- </ion-content> -->

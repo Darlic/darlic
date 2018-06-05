@@ -1,8 +1,6 @@
 page-projects {
 	
-		 h5{
-		 	font-weight:300!important;
-		 	color:#263238;
+		 p{
 		 	marging:0px;
 
 		 }
@@ -10,19 +8,23 @@ page-projects {
 		 	border-bottom:1px solid #e8e8e8;
 		 	padding-bottom:5px;
 		 }
-		 .icon-wordpress{
-		 	font-size: 30px;
-		    color: white;
-		    background-color: #03a9f4;
-		    text-align: center;
-		    margin-top: 22px;
-		    padding: 5px 0px 5px 0px;
-		 }
 		 .heading-content{
 		 	margin-top:20px;
+		 	font-weight:300!important;
+		 	color:#263238;
 		 }
 		 .btn{
 		 	text-align:center;
 		 	margin-top:20px;
+
 		 }
+		 a {
+		    text-decoration: none !important;
+		    color:#263238;
+		    font-weight:300;
+		    font-size:20px;
+		}
+		.add-new-web-btn{
+			background-color:#03a9f4;
+		}
 }
