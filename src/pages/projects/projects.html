@@ -1,16 +1,30 @@
 <!-- <ion-content padding> -->
-	<a href="http://darlic.com/create/">Add New Website</a>	
+<ion-row>
+	<ion-col col-12>
+		<div class="addnew-web">
+			<h3><ion-icon class="add-icon" name="add"></ion-icon> <a href="http://darlic.com/create/">Add New Website</a></h3>
+		</div>
+	</ion-col>
+</ion-row>
+
 <div *ngIf="productLength != 0; else elsetag">
 	<div *ngFor="let products of product; let i = index ">
-		<ion-row class="products-row" >
-			<ion-col col-7>
-				<div class="heading-content">
-					<p> {{i+1}} {{products.blogname}}</p>
+		<ion-row class="products-row" padding>
+			<ion-col col-2>
+				<div class="checkmark-icon">
+					<ion-icon name="checkmark"></ion-icon>
+					<!-- <p>{{i+1}}</p> -->
 				</div>
 			</ion-col>
-			<ion-col col-5>
-				<div class="btn">
-					<button ion-button clear item-end (click)="detailPage(products)">View</button>
+			<ion-col col-6>
+				<div class="heading-content">
+					<p>  {{products.blogname}}</p>
+				</div>
+			</ion-col>
+			<ion-col col-4>
+				<div class="eye-icon">
+					<!-- <button ion-button clear item-end (click)="detailPage(products)">View Detail</button> -->
+					<ion-icon name="eye" (click)="detailPage(products)"></ion-icon>
 				</div>
 			</ion-col>
 		</ion-row>

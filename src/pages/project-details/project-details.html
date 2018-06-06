@@ -16,13 +16,19 @@
 					<p>Domain : <span class="domain-detail">{{details.domain}}</span></p>
 				</div>
 				<div class="title-content">
-					<p>siteurl : <span class="siteurl-detail">{{details.siteurl}}</span></p>
+					<p>Site url : <span class="siteurl-detail">{{details.siteurl}}</span></p>
 				</div>
 				
 			</div>
 			<div class="visitor-btn">
-				<button ion-button outline class="border-color"><a href="#">Visit Website</a></button>
-				<button ion-button outline class="border-color"><a href="#">Admin Panel</a></button>
+				<button ion-button icon-left class="bg-color">
+					  <ion-icon class="btn-icon" name="link"></ion-icon>
+					<a href="#">Visit Website</a>
+				</button>
+				<button ion-button icon-left class="bg-color">
+					<ion-icon class="btn-icon" name="person"></ion-icon>
+					<a href="#">Admin Panel</a>
+				</button>
 			</div>
 		</ion-col>
 	</ion-row>
