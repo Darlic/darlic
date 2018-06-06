@@ -1,45 +1,6 @@
 
 <!-- <ion-content padding> -->
-<!-- <ion-row class="bg-red">
-	<ion-col col-4></ion-col>
-	<ion-col col-4>
-		<div class="order-wraper">
-			<ion-icon class="order-icon" name="cart"></ion-icon>
-		</div>
-		<div class="order-heading">
-			<p>Order</p>
-		</div>
-	</ion-col>
-	<ion-col col-4></ion-col>
 
-</ion-row>
-<ion-row padding class="main-row">
-	<ion-col col-12>
-		<div class="box-inputs-status">
-			<ion-list>
-			  <ion-item>
-			    <ion-label floating>Order Id</ion-label>
-			    <ion-input type="text"></ion-input>
-			  </ion-item>
-			</ion-list>
-			<ion-item>
-			  <ion-label>Order Date</ion-label>
-			  <ion-datetime displayFormat="DD MMMM YYYY" min="1991" max="2019-10-31" [(ngModel)]="myDate">
-			  </ion-datetime>
-			</ion-item>
-			<div class="order-status ">
-				<p class="order-status-heading">Order Status</p>
-				<ion-icon class="checkmark-icon" name="checkmark-circle-outline"></ion-icon>
-				<span class="paid">PAID</span>
-			</div>
-			<div class="order-status-unpaid ">
-				<p class="order-status-heading">Order Status</p>
-				<ion-icon class="close-icon" close="close-icon" name="close-circle"></ion-icon>
-				<span class="unpaid">UNPAID</span>
-			</div>
-		</div>
-	</ion-col>
-</ion-row> -->
 <ion-row>
 	<ion-col col-12>
 		<div class="add-new">
@@ -47,7 +8,9 @@
 		</div>
 	</ion-col>
 </ion-row>
-<ion-row class="products-row" padding>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
 	<ion-col col-2>
 		<div class="checkmark-icon">
 			<ion-icon name="checkmark"></ion-icon>
@@ -64,7 +27,9 @@
 		</div>
 	</ion-col>
 </ion-row>
-<ion-row class="products-row" padding>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
 	<ion-col col-2>
 		<div class="checkmark-icon">
 			<ion-icon name="checkmark"></ion-icon>
@@ -81,7 +46,9 @@
 		</div>
 	</ion-col>
 </ion-row>
-<ion-row class="products-row" padding>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
 	<ion-col col-2>
 		<div class="checkmark-icon">
 			<ion-icon name="checkmark"></ion-icon>
@@ -98,4 +65,137 @@
 		</div>
 	</ion-col>
 </ion-row>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+<!--listing-->
+<ion-row class="products-row" padding (click)="detail()">
+	<ion-col col-2>
+		<div class="checkmark-icon">
+			<ion-icon name="checkmark"></ion-icon>
+		</div>
+	</ion-col>
+	<ion-col col-6>
+		<div class="heading-content">
+			<p>Aione Framework</p>
+		</div>
+	</ion-col>
+	<ion-col col-4>
+		<div class="link-icon">
+			<ion-icon name="link"></ion-icon>
+		</div>
+	</ion-col>
+</ion-row>
+
 <!-- </ion-content> -->

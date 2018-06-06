@@ -22,9 +22,9 @@ import {ProductsPage} from '../pages/products/products';
 import {ProjectsPage}  from '../pages/projects/projects';
 import {SupportPage} from '../pages/support/support';
 import{ProjectDetailsPage} from '../pages/project-details/project-details'
+import {OrderDetailPage} from '../pages/order-detail/order-detail';
 
 @NgModule({
-
   declarations: [
     MyApp,
     HomePage,
@@ -38,7 +38,8 @@ import{ProjectDetailsPage} from '../pages/project-details/project-details'
     ProductsPage,
     ProjectsPage,
     SupportPage,
-    ProjectDetailsPage
+    ProjectDetailsPage,
+    OrderDetailPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +61,8 @@ import{ProjectDetailsPage} from '../pages/project-details/project-details'
     ProductsPage,
     ProjectsPage,
     SupportPage,
-    ProjectDetailsPage
+    ProjectDetailsPage,
+    OrderDetailPage
   ],
   providers: [
     StatusBar,

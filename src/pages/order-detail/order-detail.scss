@@ -1,0 +1,84 @@
+page-order-detail {
+		.bg-red{
+			background-color:#1685c2;
+		}
+		.order-wraper{
+			text-align:center;
+			background-color:#fff;
+			border-radius:10px;
+			margin:30px 0px 10px 0px;
+		}
+		.order-icon{
+			font-size:50px;
+			color:#1688c2;
+			padding:20px 0px 20px 0px;
+		}
+		.order-heading{
+			font-size:25px;
+			font-weight:300;
+			text-align:center;
+			color:#fff;
+			margin-bottom:90px;
+		}
+		p{
+			margin:0px;
+		}
+		.order-status-heading{
+			font-size:20px;
+			font-weight:300;
+			color:#263238;
+			margin-bottom:15px;
+		}
+		.order-pro-name{
+			font-size:15px;
+			color:#263238;
+			text-align:center;
+		}
+		.order-status{
+			margin:30px 0px 50px 0px;
+			text-align:center;
+		}
+		.checkmark-icon{
+			font-size:20px;
+			color:#4caf50;
+		}
+
+		.paid{
+			font-size:18px;
+			font-weight:300;
+			color:#4caf50;
+			padding-left:10px;
+		}
+		.order-status-unpaid{
+			text-align:center;
+			margin:30px 0px 50px 0px;
+		}
+		.unpaid{
+			font-size:18px;
+			font-weight:300;
+			color:#e57373;
+			padding-left:10px;
+		}
+		.close-icon{
+			font-size:20px;
+			color:#e57373;
+		}
+		.box-inputs-status{
+			border-radius:10px;
+			background-color:#fff;
+			padding:10px;
+			border:1px solid #e8e8e8;
+		}
+		.main-row{
+			margin-top:-75px;
+		}
+		.item-input-has-focus .label-md[stacked],
+		.input-has-focus .label-md[stacked],
+		.item-input-has-focus .label-md[floating],
+		.input-has-focus .label-md[floating] {
+		  color: #455a64!important;
+		}
+	.display-none{
+		display:none;
+	}
+}

@@ -13,8 +13,8 @@ export class ListRoutingPage {
   support;
   constructor(public navCtrl: NavController, public navParams: NavParams){
   }
-  ionViewDidLoad() {
-    switch (this.navParams.get('page')) {
+  ionViewDidLoad(){
+    switch (this.navParams.get('page')){
       case "order":
         this.order = true;
         break;
@@ -38,10 +38,10 @@ export class ListRoutingPage {
     this.collectionData(true,false,false,false) ;
   }
   productData(){
-   this.collectionData(false,true,false,false) 
+    this.collectionData(false,true,false,false) 
   }
   projectsData(){
-   this.collectionData(false,false,true,false) 
+    this.collectionData(false,false,true,false) 
   }
   supportData(){
     this.collectionData(false,false,false,true) 
