@@ -54,7 +54,7 @@ export class LoginPage {
         this.helper.presentToast(result.message,1000,'top');
         if(result.status == 'success'){
           resolve(result);
-        }
+        }  
       })
     })
   }
