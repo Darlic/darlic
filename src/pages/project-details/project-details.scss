@@ -23,6 +23,10 @@ page-project-details {
 			.bar-button-default-md{
 				color:#fff;
 			}
+			.bar-button-default-md:hover:not(.disable-hover){
+				color:#fff;
+			}
+
 			.bg-color{
 				background-color:#1685c2;
 			}

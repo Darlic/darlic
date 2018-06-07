@@ -1,28 +1,55 @@
 page-products {
 
-		 h5{
-		 	font-weight:300!important;
-		 	color:#263238;
-		 	marging:0px;
+			.bg-blue{
+				background-color:#1685c2;
+				min-height: 80px;
+			}
+			.products{
+				border: 1px solid #e8e8e8;
+			    border-radius: 5px;
+			    margin-top: -42px;
+			    background-color: white;
+			    padding:10px;
+			    box-shadow: 0px 2px 10px 1px #e8e8e8;
+			    margin-bottom:10px;
+			}
+			.product-heading{
+				font-size:17px;
+				font-weight:300;
+				color:#263238;
+				line-height:50px;
+			}
+			p{
+				margin:0px;
+			}
+			.ph-20{
+				padding:0px 10px 0px 10px;
+			}
+			.color-palette-icon{
+				font-size:40px;
+				text-align:center;
+				color:#ffb74d;
+			}
+			.domain-row{
+				border: 1px solid #e8e8e8;
+			    border-radius: 5px;
+			    background-color: white;
+			    padding:10px;
+			    box-shadow: 0px 2px 10px 1px #e8e8e8;
+			    margin-bottom:10px;
+			}
+			.cloud-icon{
+				font-size:40px;
+				text-align:center;
+				color:#7e57c2;
+			}
+			a{
+				text-decoration:none;
+				font-size:14px;
+				font-weight:400;
+			}
+			.renew-link{
+				margin-top:16px;
+			}
 
-		 }
-		 .products-row{
-		 	border-bottom:1px solid #e8e8e8;
-		 	padding-bottom:5px;
-		 }
-		 .icon-wordpress{
-		 	font-size: 30px;
-		    color: white;
-		    background-color: #03a9f4;
-		    text-align: center;
-		    margin-top: 22px;
-		    padding: 5px 0px 5px 0px;
-		 }
-		 .heading-content{
-		 	margin-top:20px;
-		 }
-		 .btn{
-		 	text-align:center;
-		 	margin-top:20px;
-		 }
 }
