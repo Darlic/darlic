@@ -17,7 +17,6 @@ export class ProjectsPage {
   constructor(public http:HttpClient, public navCtrl: NavController, public navParams: NavParams) {
     this.ionViewDidLoad();
   }
- 
   ionViewDidLoad(){
     this.spinner=true;
     this.userId=localStorage.getItem("userId");

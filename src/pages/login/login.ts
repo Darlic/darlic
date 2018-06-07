@@ -17,8 +17,8 @@ export class LoginPage {
   Error:any;
   spinner:any
   constructor(public helper:IonicHelperProvider,public IonicProvider:IonicServicesProvider,public http:HttpClient, public fb:FormBuilder, public navCtrl: NavController, public navParams: NavParams) {
-  this.createLogin();
-  this.spinner=false;
+    this.createLogin();
+    this.spinner=false;
   }
   createLogin(){
     this.loginform=this.fb.group({
@@ -55,8 +55,8 @@ export class LoginPage {
         if(result.status == 'success'){
           resolve(result);
         }  
-      })
-    })
+      });
+    });
   }
   signIn(){
     this.navCtrl.setRoot(SignupPage)

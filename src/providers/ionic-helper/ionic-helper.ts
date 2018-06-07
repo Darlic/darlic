@@ -23,7 +23,6 @@ export class IonicHelperProvider {
       position: position,
       cssClass: "toastCss",
     });
-
     toast.onDidDismiss(() => {
       console.log('Dismissed toast');
     });
