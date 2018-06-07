@@ -23,7 +23,7 @@ page-projects {
 		 .add-icon{
 		 	color:#4caf50;
 		 }
-		 a {
+		 a{
 		    text-decoration: none !important;
 		    color:#4caf50;
 		    font-weight:300;
@@ -49,5 +49,21 @@ page-projects {
 		    text-align: center;
 		    color: #03a9f4;
 		    margin-top: 8px;
+		}
+		//spinner css
+		.spinner-md-crescent circle{
+			stroke: #fff;
+			stroke-width: 3px;
+    	stroke-dasharray: 20px;
+    	stroke-dashoffset: 40px;
+		}
+		ion-spinner {
+	    width: 48px !important;
+	    height: 47px !important;;
+	    top: 50%;
+	    left: 40%;
+	    background: black;
+	    z-index: 99999;
+	    border-radius: 10px;
 		}
 }

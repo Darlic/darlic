@@ -4,9 +4,13 @@
     <ion-title>orderDetail</ion-title>
   </ion-navbar>
 </ion-header>
+<<<<<<< HEAD
 
 
 <ion-content>
+=======
+<ion-content padding>
+>>>>>>> ff14648968db7c5cd711cbb626aa07657d2278c8
 	<ion-row class="bg-red">
 	<ion-col col-4></ion-col>
 	<ion-col col-4>
@@ -25,21 +29,22 @@
 		<div class="box-inputs-status">
 			<ion-list>
 			  <ion-item>
-			    <ion-label floating>Order Id</ion-label>
+			    <ion-label></ion-label>
 			    <ion-input type="text"></ion-input>
 			  </ion-item>
 			</ion-list>
 			<ion-item>
-			  <ion-label>Order Date</ion-label>
-			  <ion-datetime displayFormat="DD MMMM YYYY" min="1991" max="2019-10-31" [(ngModel)]="myDate">
-			  </ion-datetime>
+			  <ion-label></ion-label>
+			  <!-- <ion-datetime displayFormat="DD MMMM YYYY" min="1991" max="2019-10-31" [(ngModel)]="myDate"> -->
+			  <ion-input type="text"></ion-input>
+			 <!--  </ion-datetime> -->
 			</ion-item>
 			<div class="order-status ">
 				<p class="order-status-heading">Order Status</p>
 				<ion-icon class="checkmark-icon" name="checkmark-circle-outline"></ion-icon>
 				<span class="paid">PAID</span>
 			</div>
-			<div class="order-status-unpaid ">
+			<div class="order-status-unpaid">
 				<p class="order-status-heading">Order Status</p>
 				<ion-icon class="close-icon" close="close-icon" name="close-circle"></ion-icon>
 				<span class="unpaid">UNPAID</span>

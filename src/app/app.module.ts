@@ -46,7 +46,6 @@ import {OrderDetailPage} from '../pages/order-detail/order-detail';
     HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
-
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
