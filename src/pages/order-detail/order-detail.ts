@@ -9,10 +9,12 @@ import { FormArray, FormBuilder, FormGroup,Validators } from '@angular/forms';
 })
 export class OrderDetailPage {
 	spinner:any
+  labelField:any;
   constructor(public navCtrl: NavController, public navParams: NavParams){
   }
-  ionViewDidLoad() {
+  ionViewDidLoad(){
     this.spinner=true;
+    this.labelField="data in readonly";
     setTimeout(function(argument) {
      	 this.spinner=false;
     },200)
