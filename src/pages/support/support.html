@@ -14,60 +14,149 @@
 
 
 <!-- <ion-content padding> -->
-<div padding>
-  <ion-segment [(ngModel)]="pet">
-    <ion-segment-button value="kittens">
-      Order
-    </ion-segment-button>
-    <ion-segment-button value="puppies">
-      Product
-    </ion-segment-button>
-    <ion-segment-button value="apple">
-      Project
-    </ion-segment-button>
-    <ion-segment-button value="support">
-      Support
-    </ion-segment-button>
-  </ion-segment>
-</div>
-
-<div [ngSwitch]="pet">
-  <ion-list *ngSwitchCase="'puppies'">
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="img/thumbnail-puppy-1.jpg">
-      </ion-thumbnail>
-      <h2>order</h2>
-    </ion-item>
-    ...
-  </ion-list>
-
-  <ion-list *ngSwitchCase="'kittens'">
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="img/thumbnail-kitten-1.jpg">
-      </ion-thumbnail>
-      <h2>Product</h2>
-    </ion-item>
-    ...
-  </ion-list>
-  <ion-list *ngSwitchCase="'apple'">
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="img/thumbnail-kitten-1.jpg">
-      </ion-thumbnail>
-      <h2>Project</h2>
-    </ion-item>
-    ...
-  </ion-list>
-  <ion-list *ngSwitchCase="'support'">
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="img/thumbnail-kitten-1.jpg">
-      </ion-thumbnail>
-      <h2>support</h2>
-    </ion-item>
-    ...
-  </ion-list>
-</div>
+      <ion-row>
+         <ion-col col-12>
+            <div class="add-new">
+               <h3><ion-icon class="add-icon" name="add"></ion-icon>
+               <a href="#">Add New Ticket</a></h3>
+            </div>
+         </ion-col>
+      </ion-row>
+      <div class="wrapper">
+         <ion-row>
+            <ion-col col-2>
+               <div class="ticket-id">
+                  <span>1</span>
+               </div>
+            </ion-col>
+            <ion-col col-10>
+               <div class="siteurl">
+                  <p>Lorem Ipsum is simply dummy text offfdfg dfsgdfa ggdfggdf</p>
+               </div>
+               <ion-row>
+                  <ion-col col-5>
+                     <div>
+                        <span class="status-heading">Status :-</span>
+                        <ion-icon class="open-icon" name="open"></ion-icon>
+                        <span class="status">Open</span>
+                     </div>
+                  </ion-col>
+                  <ion-col col-5>
+                     <div>
+                        <span class="priority-heading">Priority :-</span>
+                        <span class="priority">Medium</span>
+                     </div>
+                  </ion-col>
+                   <ion-col col-2>
+                     <div class="view-detail">
+                        <p>More</p>
+                     </div>
+                  </ion-col>
+               </ion-row>
+            </ion-col>
+         </ion-row>
+      </div>
+      <div class="wrapper">
+         <ion-row>
+            <ion-col col-2>
+               <div class="ticket-id">
+                  <span>2</span>
+               </div>
+            </ion-col>
+            <ion-col col-10>
+               <div class="siteurl">
+                  <p>Lorem Ipsum is simply dummy text offfdfg dfsgdfa ggdfggdf</p>
+               </div>
+               <ion-row>
+                  <ion-col col-5>
+                     <div>
+                        <span class="status-heading">Status :-</span>
+                        <ion-icon class="open-icon" name="open"></ion-icon>
+                        <span class="status">Open</span>
+                     </div>
+                  </ion-col>
+                  <ion-col col-5>
+                     <div>
+                        <span class="priority-heading">Priority :-</span>
+                        <span class="priority">Medium</span>
+                     </div>
+                  </ion-col>
+                   <ion-col col-2>
+                     <div class="view-detail">
+                        <p>More</p>
+                     </div>
+                  </ion-col>
+               </ion-row>
+            </ion-col>
+         </ion-row>
+      </div>
+      <div class="wrapper">
+         <ion-row>
+            <ion-col col-2>
+               <div class="ticket-id">
+                  <span>3</span>
+               </div>
+            </ion-col>
+            <ion-col col-10>
+               <div class="siteurl">
+                  <p>Lorem Ipsum is simply dummy text offfdfg dfsgdfa ggdfggdf</p>
+               </div>
+               <ion-row>
+                  <ion-col col-5>
+                     <div>
+                        <span class="status-heading">Status :-</span>
+                        <ion-icon class="open-icon" name="open"></ion-icon>
+                        <span class="status">Open</span>
+                     </div>
+                  </ion-col>
+                  <ion-col col-5>
+                     <div>
+                        <span class="priority-heading">Priority :-</span>
+                        <span class="priority">Medium</span>
+                     </div>
+                  </ion-col>
+                   <ion-col col-2>
+                     <div class="view-detail">
+                        <p>More</p>
+                     </div>
+                  </ion-col>
+               </ion-row>
+            </ion-col>
+         </ion-row>
+      </div>
+      <div class="wrapper">
+         <ion-row>
+            <ion-col col-2>
+               <div class="ticket-id">
+                  <span>4</span>
+               </div>
+            </ion-col>
+            <ion-col col-10>
+               <div class="siteurl">
+                  <p>Lorem Ipsum is simply dummy text offfdfg dfsgdfa ggdfggdf</p>
+               </div>
+               <ion-row>
+                  <ion-col col-5>
+                     <div>
+                        <span class="status-heading">Status :-</span>
+                        <ion-icon class="open-icon" name="open"></ion-icon>
+                        <span class="status">Open</span>
+                     </div>
+                  </ion-col>
+                  <ion-col col-5>
+                     <div>
+                        <span class="priority-heading">Priority :-</span>
+                        <span class="priority">Medium</span>
+                     </div>
+                  </ion-col>
+                   <ion-col col-2>
+                     <div class="view-detail">
+                        <p>More</p>
+                     </div>
+                  </ion-col>
+               </ion-row>
+            </ion-col>
+         </ion-row>
+      </div>   
+         
 <!-- </ion-content> -->
