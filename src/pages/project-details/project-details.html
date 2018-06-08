@@ -8,6 +8,7 @@
 <ion-content>
 	<ion-row padding>
 		<ion-col col-12>
+
 			<div *ngIf="details" class="project-details">
 				<div class="title-content">
 					<p>Title : <span class="title-detail">{{details.blogname}}</span></p>
@@ -19,9 +20,10 @@
 					<p>Site url : <span class="siteurl-detail">{{details.siteurl}}</span></p>
 				</div>
 			</div>
+
 			<div class="visitor-btn">
 				<button ion-button icon-left class="bg-color">
-					  <ion-icon class="btn-icon" name="link"></ion-icon>
+					<ion-icon class="btn-icon" name="link"></ion-icon>
 					<a href="#">Visit Website</a>
 				</button>
 				<button ion-button icon-left class="bg-color">
@@ -29,6 +31,7 @@
 					<a href="#">Admin Panel</a>
 				</button>
 			</div>
+
 		</ion-col>
 	</ion-row>	
 </ion-content>
